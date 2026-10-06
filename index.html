@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Defensive guard against browser extensions trying to override window.fetch
+      try {
+        let _fetch = window.fetch;
+        Object.defineProperty(window, 'fetch', {
+          get: function() { return _fetch; },
+          set: function(val) { _fetch = val; },
+          configurable: true,
+          enumerable: true
+        });
+      } catch (e) {
+        // Safe fallback
+      }
+    </script>
+    <title>An Huy - Nhà Phân Phối Hàng Tiêu Dùng Uy Tín</title>
+    <meta name="description" content="Hệ thống phân phối sỉ hàng tiêu dùng, hóa mỹ phẩm, thực phẩm và nước giải khát chính hãng uy tín cho đại lý và điểm bán lẻ." />
+    <meta property="og:title" content="An Huy - Nhà Phân Phối Hàng Tiêu Dùng Uy Tín" />
+    <meta property="og:description" content="Hệ thống phân phối sỉ hàng tiêu dùng, hóa mỹ phẩm, thực phẩm và nước giải khát chính hãng uy tín cho đại lý và điểm bán lẻ." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-600 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

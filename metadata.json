@@ -1,0 +1,6 @@
+{
+  "name": "An Huy - Nhà Phân Phối Hàng Tiêu Dùng Uy Tín",
+  "description": "Hệ thống phân phối sỉ hàng tiêu dùng, hóa mỹ phẩm, thực phẩm và nước giải khát chính hãng uy tín cho đại lý và điểm bán lẻ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
